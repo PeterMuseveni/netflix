@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px;
+    z-index: 100;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+.navigation li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1;
+}
+.navigation li a:hover{
+    color: #de0611;
+}
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+.search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0px 4px 0 45px;
+}
+.search input::placeholder{
+    color: #fff;
+}
+.search .fa-search{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+
+/* banner  */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 ,0, 0, 0.6);
+}
+.content{
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    left: 80px;
+    transform: translateY(-50%);
+}
+/* .title,
+.favicon{
+    border: 1px solid black;
+    padding: 0;
+} */
+.favicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.content p{
+    width: 80%;
+    /* padding-bottom: 30px; */
+}
+.content ul{
+    position: absolute;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin:20px 20px 0 0;
+    width: 100px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.grey{
+    background: gray !important;
+    text-transform: capitalize;
+}
+.grey a{
+    color: #fff !important;
+}
+.content a{
+    color: #000;
+    text-decoration: none;
+}
